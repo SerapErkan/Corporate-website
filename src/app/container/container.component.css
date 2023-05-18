@@ -1,0 +1,165 @@
+.container {
+}
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.right {
+}
+.left {
+}
+
+p {
+  color: rgba(0, 0, 0, 0.501);
+}
+b {
+  color: #0c0c0c;
+}
+i {
+  color: #ff9f00;
+}
+
+span {
+  font-size: 8vh;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+button {
+  padding: 20px 30px;
+  margin-top: 20px;
+  background-color: #ff9f00;
+  border: none;
+  color: whitesmoke;
+  font-size: medium;
+  border-radius: 5px;
+  font-weight: 300;
+}
+img {
+  width: 800px;
+}
+.img-home {
+  position: relative;
+  animation: home 5s infinite alternate;
+}
+@keyframes home {
+  25% {
+    top: 100px;
+  }
+  50% {
+    top: 0px;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.question {
+  /* border: 5px solid rgb(0, 255, 85); */
+}
+.question-div {
+  position: relative;
+  border: #ff9f00;
+  border-radius: 10px;
+  height: 100px;
+  background-color: rgb(252, 254, 255);
+  margin: 10px;
+  padding: 30px;
+  font-size: 2vh;
+  font-weight: 900;
+  flex-basis: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 500px;
+}
+
+h3,
+h1 {
+  text-align: center;
+}
+h3 ~ h1 {
+  margin-bottom: 100px;
+}
+
+.plus {
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+
+.answer {
+  display: none;
+}
+
+.item {
+  background-color: black;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: #ff9f00;
+  font-size: 5vh;
+  text-align: center;
+  margin: auto;
+}
+.item:hover {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.item-container {
+  padding: 100px;
+  background-color: white;
+}
+
+.item-text {
+  max-width: 340px;
+  margin-top: 50px;
+
+  text-align: center;
+}
+.item-text h6 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.438);
+}
+.item-container b {
+  color: #ff9f00;
+}
+
+h2 {
+  font-size: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border-right: 3px solid #0f4464; */
+  width: 30ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text-animation 10s infinite;
+}
+
+@keyframes text-animation {
+  from {
+    width: 0;
+    /* border-color: transparent; */
+  }
+  to {
+    width: 300px;
+  }
+}
+
+clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+}

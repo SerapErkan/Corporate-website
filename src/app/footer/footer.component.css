@@ -1,0 +1,31 @@
+footer {
+  background-color: #171c29;
+  color: aliceblue;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.col {
+  margin: 20px;
+  padding: 50px;
+  font-size: large;
+  color: #ff9f00;
+  text-align: center;
+}
+.col p {
+  color: whitesmoke;
+  margin-top: 20px;
+}
+
+.col p:hover {
+  color: #ff9f00;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+}
